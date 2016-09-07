@@ -243,28 +243,60 @@ header{
 	width:459px;
 	height:318px;
 	position:relative;
+	background:#eeedd6;
+	margin-top:18px;
 }
-
+.s_right_bottom ul{
+	list-style-image:url("triangle.png");
+}
+.s_right_bottom li{
+	font:16px "songti sc";
+	text-align:left;
+	color:#5a5b5b;
+	margin-left:50px;
+	padding-top:20px;
+}
 .one{
 	position:absolute;
 	width:260px;
 	height:160px;
 	bottom:0;
 	left:0;
+	background:#d55d5c;
 }
 .zero{
 	font-size:86px;
 	color:white;
 	border-right:2px solid white;
+	float:left;
+	line-height:86px;
+	margin:37px 10px;
 }
 .num_title{
 	font:oblique 21px 'heiti sc';
 	color:white;
 	margin:0 24px;
+	text-transform:uppercase;
+	margin-top:37px;
+	
 }
 .one p{
 	font:12px 'heiti sc';
 	margin:0 6px;
+	color:white;
+}
+.helloworld{
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:178px;
+	height:160px;
+	font:oblique 12px 'heiti sc';
+	color:#5a5b5b;
+}
+.helloworld span{
+	font:72px 'heiti sc';
+	color:#d45d5c;
 }
 footer{
 	position:absolute;
