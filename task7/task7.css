@@ -1,0 +1,160 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	min-width:1280px;
+}
+header{
+	position:relative;
+	height:60px;
+	width:100%;
+	vertical-align:middle;
+}
+.banner-left{
+	float:left;
+	position:absolute;
+	left:7%;
+	bottom:0;
+}
+.banner-left img{
+	width:24px;
+	height:24px;
+}
+.banner-left h2{
+	font:24px  'microsoft yahei';
+	display:inline-block;
+	cursor:default;
+	color:#4e3a4f;
+	margin:0;
+	line-height:60px;
+}
+header ul{
+	position:absolute;
+	right:0;
+	list-style:none;
+	/* margin:1em; */
+	padding:0;
+	line-height:60px;
+}
+header ul li{
+	color:grey;
+	float:left;
+	margin-left:1em;
+	margin-right:1em;
+	/* padding-bottom:1em; */
+}
+header ul li:hover{
+	color:red;
+	border-bottom:2px solid red;
+}
+.login{
+	margin-left:6em;
+	color:red;
+	/* text-align:center; */
+	/* vertical-align:middle; */
+	/* line-height:60px; */
+	/* height:60px; */
+}
+.login img{
+margin-right:2em;
+}
+.cover{
+	background:url("pic01.jpg");
+	background-size:100% auto;
+	padding-left:4em;
+	padding-top:6em;
+	padding-bottom:6em
+}
+.cover h1{
+	color:white;
+	font-family:'Arial';
+	font-size:60px;
+}
+.cover h2{
+	font-family:'Arial';
+	color:white;
+	margin-top:1em;
+	margin-bottom:2em;
+	width:15em;
+}
+.cover input{
+	background:red;
+	color:white;
+	text-align:center;
+	vertical-align:middle;
+	width:15em;
+	border:0;
+	font-size:20px;
+	margin-bottom:20px;
+	height:60px;
+}
+.feature{
+	width:100%;
+}
+.feature img{
+	margin:20px 50px;
+}
+.feature div{
+	display:inline-block;
+	position:relative;
+	width:24%;
+	text-align:center;
+}
+.feature p{
+	display:inline-block;
+	height:60px;
+	border-right:2px solid black;
+	width:180px;
+	padding-bottom:10px;
+}
+.known{
+	height:400px;
+	width:100%;
+	background:#edeaea;
+	text-align:center;
+}
+.known div{
+	position:relative;
+	top:100px;
+	font-size:50px;
+	color:#534141;
+}
+.known img{
+	position:relative;
+	top:80px;
+}
+.city{
+	position:relative;
+	text-align:center;
+	background:url("pic02.jpg");
+	height:300px;
+	width:100%;
+}
+.city h1{
+	position:relative;
+	top:50px;
+	color:white;
+	font-size:22px;
+}
+.city p{
+	position:relative;
+	top:70px;
+	color:white;
+	font-size:13px;
+	margin-top:20px;
+	margin-bottom:35px;
+}
+.city hr{
+	position:relative;
+	top:55px;
+	margin:0 auto;
+	width:30px;
+	color:white;
+}
+.city select,input{
+	position:relative;
+	top:85px;
+	display:inline-block;
+	width:60px;
+}
