@@ -1,0 +1,40 @@
+body {
+}
+.container{
+    width:100%;
+    max-width:1200px;
+}
+.container *{
+    box-sizing:border-box;
+}
+.row{
+    overflow:auto;
+}
+.row:before,
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+[class*='col-'] {
+    float:left;
+    min-height:1px;
+    width:16.6%;
+    padding:12px;
+}
+.col-1{
+    width:16.6%;
+}
+.col-1{ width: 16.66%; }
+.col-2{ width: 33.33%; }
+.col-3{ width: 50%;    }
+.col-4{ width: 66.66%; }
+.col-5{ width: 83.33%; }
+.col-6{ width: 100%;   }
+
+div{
+    border:1px solid #999;
+    background:#eee;
+    height:50px;
+}
+@media
