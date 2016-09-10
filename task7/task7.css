@@ -9,7 +9,6 @@ header{
 	position:relative;
 	height:60px;
 	width:100%;
-	vertical-align:middle;
 }
 .banner-left{
 	text-align:center;
@@ -21,7 +20,7 @@ header{
 	left:7%;
 	bottom:0;
 }
-.banner-left h2{
+.banner-left>h2{
 	font:24px  'microsoft yahei';
 	display:inline-block;
 	cursor:default;
@@ -29,33 +28,56 @@ header{
 	margin:0;
 	line-height:60px;
 }
-header ul{
+header>ul{
 	position:absolute;
-	right:0;
+	right:15%;
 	list-style:none;
-	/* margin:1em; */
-	padding:0;
 	line-height:60px;
 }
-header ul li{
+header>ul>li{
 	color:grey;
 	float:left;
-	margin-left:1em;
-	margin-right:1em;
-	/* padding-bottom:1em; */
+	width:80px;
+	text-align:center;
+	font-size:16px;
+	transition: color 0.4s ease-in-out 0s;
 }
 header ul li:hover{
-	color:red;
-	border-bottom:2px solid red;
+	color:#f04c57;
+}
+.login:hover{
+	border-bottom:4px solid #f04c57;
+}
+.move{
+	position: absolute;
+    border-bottom: 4px solid #E53C3C;
+    left: 0;
+	bottom:-1px;
+	transition:left 0.4s ease-in-out;
+}
+header ul li:nth-child(1):hover~.move{
+	left:0;
+}
+header ul li:nth-child(2):hover~.move{
+	left:20%;
+}
+header ul li:nth-child(3):hover~.move{
+	left:40%;
+}
+header ul li:nth-child(4):hover~.move{
+	left:60%;
+}
+header ul li:nth-child(5):hover~.move{
+	left:80%;
 }
 .login{
 	background:url("icon-2.jpg") no-repeat left center scroll;
 	margin-left:6em;
 	margin-right:4em;
-	color:red;
+	color:#f04c57;
 	text-align:center;
-	line-height:60px;
 	width:70px;
+	float:right;
 }
 .login span{
 	line-height:60px;
