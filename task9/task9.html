@@ -1,43 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title></title>
-	<link rel="stylesheet" href="task9.css" media="all">
-</head>
-<body>
-	<header>
-		<div class="logo"></div>
-		<input class="search" type="">
-		<div class="login">登陆</div>
-	</header>
-	<nav>
-		<div class="profile">
-			<div class="photo">ABC123</div>
-			<div class="pro">110</br>收藏</div>
-			<div class="pro">313</br>粉丝</div>
-		</div>
-		<ul>
-			<li class="open "><i class="file_open"></i>个人报表
-				<ul>
-					<li class=""><i class="arrow_cur"></i><i class="file_cur"></i>文件一</li>
-					<li class="open"><i class="arrow_open"></i><i class="file_open"></i>文件二
-						<ul>
-							<li class="open"><i class="doc_open"></i>文档1</li>
-							<li><i class="doc_close"></i>文档2</li>
-						</ul>
-					</li>
-					<li><i class="file_open"></i>文件三</li>
-				</ul>
-			</li>
-			<li><i class="star"></i>个人收藏</li>
-			<li><i class="share"></i>我的分享</li>
-			<li><i class="star"></i>图库</li>
-			<li><i class="star"></i>成长记录</li>
-			<li><i class="user_info"></i>账户信息</li>
-		</ul>
-	</nav>
-	<div class="container"></div>
-	
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="task9.css" media="all">
+	</head>
+	<body>
+		<header>
+			<div class="logo"></div>
+			<input class="search" type="">
+			<div class="login">登陆</div>
+		</header>
+		<nav>
+			<div class="profile">
+				<div class="photo">ABC123</div>
+				<div class="pro">110</br>收藏</div>
+				<div class="pro">313</br>粉丝</div>
+			</div>
+			<ul>
+				<li class="open "><i class="file_open"></i>个人报表
+					<ul>
+						<li class=""><i class="arrow_cur"></i><i class="file_cur"></i>文件一</li>
+						<li class="open"><i class="arrow_open"></i><i class="file_open"></i>文件二
+							<ul>
+								<li class="open"><i class="doc_open"></i>文档1</li>
+								<li><i class="doc_close"></i>文档2</li>
+							</ul>
+						</li>
+						<li><i class="file_open"></i>文件三</li>
+					</ul>
+				</li>
+				<li><i class="star"></i>个人收藏</li>
+				<li><i class="share"></i>我的分享</li>
+				<li><i class="star"></i>图库</li>
+				<li><i class="star"></i>成长记录</li>
+				<li><i class="user_info"></i>账户信息</li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="location">
+				<a href="">C站</a>
+				/
+				<a href="">个人报表</a>
+				/
+				<a href="">文件一</a>
+				/
+				<a class="now_location" href="">文档一</a>
+			</div>
+			<div class="statement">
+				<div class="section1">
+					<form action="">
+						<div class="search_1">
+							<div>
+								<span>查询项</span>
+								<select class="select_box w71" id="" name="">
+									<option value="第1项">第1项</option>
+									<option value="第2项">第2项</option>
+								</select>
+							</div>
+						</div>
+						<div class="search_2">
+							<div>
+								<div>
+									<span>买方</span>
+									<select id="" name="" class="select_box w120">
+										<option value="小A" selected>小A</option>
+										<option value="小C">小C</option>
+									</select>
+								</div>
+								<div>
+									<span>卖方</span>
+									<select id="" name="" class="select_box w120">
+										<option value="小A">小A</option>
+										<option value="小C" selected>小C</option>
+									</select>
+								</div>
+							</div>
+							<a class="change">换</a>
+						</div>
+						<div class="search_3">
+							<div>
+								<span>日期</span>
+								<input type="date"class="select_box w120" placeholder="2016-04-01">
+							</div>
+							<div>
+								<span>总耗时</span>
+								<select id="" name="" class="select_box w71">
+									<option value="1天">1天</option>
+									<option value="2天">2天</option>
+									<option value="3天">3天</option>
+									<option value="4天">4天</option>
+									<option value="5天">5天</option>
+									<option value="6天">6天</option>
+									<option value="7天">7天</option>
+									<option value="8天" selected>8天</option>
+								</select>
+							</div>							<div>
+								<span>人数</span>
+								<select id="" name="" class="select_box w71">
+									<option value="1人">1人</option>
+									<option value="2人">2人</option>
+									<option value="3人">3人</option>
+									<option value="4人">4人</option>
+									<option value="5人">5人</option>
+									<option value="6人">6人</option>
+									<option value="7人">7人</option>
+									<option value="8人" selected>8人</option>
+									<option value="9人"></option>
+									<option value="10人"></option>
+								</select>
+							</div>	
+							<span>成交项</span>
+							<select id="" name="" class="select_box w120">
+								<option value="1项">1项</option>
+								<option value="2项">2项</option>
+								<option value="3项">3项</option>
+								<option value="4项">4项</option>
+								<option value="5项">5项</option>
+								<option value="6项">6项</option>
+								<option value="7项">7项</option>
+								<option value="8项" selected>8项</option>
+								<option value="9项">9项</option>
+								<option value="10项">10项</option>
+							</select>
+						</div>
+						<div class="search_4">
+							<input type="submit" value="搜索">
+						</div>
+					</form>
+				</div>
+				<div class="section2">
+
+				</div>
+				<div class="section3"></div>
+				<div class="section4"></div>
+				<div class="section5"></div>
+				<div class="section6"></div>
+				<div class="section7"></div>
+			</div>
+
+	</body>
 </html>

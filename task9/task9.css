@@ -34,7 +34,7 @@ header{
 	position:absolute;
 	right:20px;
 	width:60px;
-	background:url("img/login.png") no-repeat scroll 0 19px;
+	background:url("img/login.png") no-repeat scroll 0 22px;
 	color:#fff;
 	font-size:12px;
 	text-align:center;
@@ -42,9 +42,12 @@ header{
 
 }
 nav{
+	float:left;
+	position:relative;
+	display:inline-block;
 	background:#2a2e3d;
-	width:250px;
-	height:1200px;
+	width:260px;
+	height:100%;
 }
 .profile{
 	padding:18px 22px;
@@ -130,4 +133,115 @@ nav i{
 }
 .arrow_open{
 	background:url("img/arrow_open.png") no-repeat scroll center;
+}
+.container{
+	display:inline-block;
+	position:relative;
+	float:left;
+	height:100%;
+	width:1015px;
+}
+.location{
+	height:30px;
+	line-height:30px;
+	padding-left:26px;
+}
+.now_location{
+	color:#6897c1!important;
+}
+.location a{
+	text-decoration:none;
+	color:#a1a1a1;
+	font-size:12px;
+}
+.statement{
+	background:#ededed;
+	padding:20px 50px;
+}
+.section1{
+	background:#fff;
+	height:100px;
+	padding-left:30px;
+	padding-top:10px;
+	padding-bottom:10px;
+	color:#aaa;
+	font-size:12px;
+}
+/* .section1 div:nth-child(1){ */
+/*     display:inline-block; */
+/*     width:120px; */
+/* } */
+/* .section1 div:nth-child(2){ */
+/*     display:inline-block; */
+/*     width:220px; */
+/* } */
+/* .section1 div:nth-child(2) div{ */
+/*     width:100%; */
+/* } */
+/* .section1 div:nth-child(3){ */
+/*     display:inline-block; */
+/*     width:440px; */
+/* } */
+/* .section1 div:nth-child(4){ */
+/*     display:inline-block; */
+/*     width:40px; */
+/* } */
+.section1 div{
+	display:inline-block;
+	margin:4px 10px;
+}
+.section1 span{
+	margin:0 5px;
+}
+.w71{
+	width:71px;
+}
+.w120{
+	width:120px;
+}
+.select_box{
+	height:24px;
+	border:1px solid #cacbcb;
+	cursor:pointer;
+	-moz-appearance:none;
+}
+.search_1{
+	float:left;
+	width:190px;
+}
+.search_2{
+	float:left;
+	width:200px;
+}
+.search_2>div{
+	width:170px;
+	margin:0;
+	float:left;
+	/* margin-right:0; */
+}
+.search_2>div div{
+	margin-right:0;
+}
+.change{
+	cursor:pointer;
+	color:#fff;
+	padding-left:14px;
+	float:left;
+	height:60px;
+	width:30px;
+	line-height:59px;
+	background:url("img/change.png") no-repeat center center;
+}
+.search_3{
+	width:350px;
+}
+.search_4 input{
+	border:0;
+	background:#388ac1;
+	color:#fff;
+	width:50px;
+	height:25px;
+	/* 不知道为什么不能连着字一起移动 */
+	/* line-height:50px; */
+	text-align:center;
 }
