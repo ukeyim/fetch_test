@@ -1,6 +1,7 @@
 *{
 	margin:0;
 	padding:0;
+	font-family:sans-serif;
 }
 body{
 	min-width:1280px;
@@ -107,7 +108,6 @@ header ul li:nth-child(5):hover~.move{
 .cover h2{
 	font-family:'Arial';
 	font-size:22px;
-	/* letter-spacing:3px; */
 	color:white;
 	font-weight:normal;
 	margin-top:1em;
@@ -128,33 +128,36 @@ header ul li:nth-child(5):hover~.move{
 .feature{
 	font-size:0;
 	width:100%;
-}
-.feature{
+	height:220px;
 	text-align:center;
-
 }
-.feature img{
-	/* display:block; */
-	margin:20px 50px;
-}
-.feature .cell{
+.cell{
 	display:inline-block;
-	/* position:relative; */
 	width:25%;
-	/* text-align:center; */
 }
-.feature p{
+.img{
+	height:130px;
+	width:100%;
+	line-height:130px;
+}
+.img img{
+	position: relative;
+	top:30px;
+}
+.feature .mes{
 	font-size:14px;
 	display:inline-block;
-	height:60px;
-	width:180px;
+	height:40px;
+	width:100%;
 	padding-bottom:10px;
-}
-.cell div:last-child{
 	border-right:2px solid grey;
+	transition:color 0.4s ease-in-out;
 }
-.cell:last-child div{
+.cell:last-child .mes{
 	border:medium none;
+}
+.feature .mes:hover{
+	color:#be4f48;
 }
 .known{
 	height:400px;
@@ -225,11 +228,21 @@ header ul li:nth-child(5):hover~.move{
 	opacity:1;
 
 }
-.gallary h5{
-	font-size:20px;
+.gallary figure:nth-child(2) p:first-child{
+	font-size:24px;
+	/* 使用letter-spacing不能居中,需要加上text-indent */
+	text-indent:14px;
+	letter-spacing:14px;
+	color:0;
 }
-.gallary p{
-	font-size:18px;
+.gallary p:nth-child(2){
+	font-size:14px;
+	color:0;
+}
+.gallary p:nth-child(3),.gallary figure:nth-child(2) p{
+	font-size:12px;
+	color:#b3afac;
+	margin:4px 0;
 }
 .gallary figure{
 	display:inline-block;
@@ -298,19 +311,19 @@ header ul li:nth-child(5):hover~.move{
 }
 .s6_right p:nth-child(1){
 	font-family:'Microsoft yahei';
-	font-size:24px;
-	/* position:absolute; */
-	/* top:250px; */
+	font-weight:bold;
+	font-size:20px;
 	margin-top:200px;
 }
 .s6_right p:nth-child(1) span{
-	color:red;
+	color:#be4f48;
 }
 .s6_right p:nth-child(2){
+	font-family:'Microsoft yahei';
 	font-size:14px;
 	line-height:25px;
 	top:250px;
-	width:200px;
+	width:240px;
 	margin:20px auto 0;
 }
 .s6_right input{
@@ -333,6 +346,7 @@ header ul li:nth-child(5):hover~.move{
 	float:left;
 	width:33.3%;
 	height:100%;
+	position: relative;
 }
 .section7 div p{
 	font:24px 'Microsoft yahei';
@@ -344,11 +358,21 @@ header ul li:nth-child(5):hover~.move{
 	/* color:grey; */
 	margin:9px auto;
 	border:0;
-	height:1px;
+	height:2px;
 	background:grey;
 }
 .section7 div:first-child{
 	background:#e84e4c;
+}
+.section7 div:last-child::before{
+	content:"";
+	border-color:transparent transparent transparent #fff;
+	border-width:30px;
+	border-style:solid;
+	position:absolute;
+	top:209px;
+	left:0;
+
 }
 .section7 input{
 	border:1px solid #e84e4c;
@@ -393,12 +417,17 @@ header ul li:nth-child(5):hover~.move{
 	font-size:20px;
 	color:black;
 }
+.s8_bottom{
+	font-family:"microsoft yahei";
+	position: relative;
+}
 .s8_left{
 	display:inline-block;
 	text-align:left;
 	padding-left:100px;
 	height:400px;
 	width:30%;
+	vertical-align:top;
 }
 .s8_left div{
 	width:100%;
@@ -413,6 +442,7 @@ header ul li:nth-child(5):hover~.move{
 .s8_left p{
 	color:#b3afac;
 	font-size:14px;
+	cursor:pointer;
 }
 .s8_left p:last-child{
 	float:right;
@@ -457,7 +487,7 @@ header ul li:nth-child(5):hover~.move{
 .section9 h1{
 	display:inline-block;
 	color:white;
-	margin-top:150px;
+	margin-top:100px;
 	margin-bottom:20px;
 	font-size:20px;
 }
@@ -466,15 +496,23 @@ header ul li:nth-child(5):hover~.move{
 	font-size:16px;
 	margin-bottom:30px;
 }
+.section9 div{
+	font-size:0;
+	vertical-align:top;
+	height:40px;
+	margin:0 auto;
+	width:510px;
+}
 .section9 input[type="email"]{
 	display:inline-block;
 	height:40px;
-	width:600px;
+	width:410px;
 	border:0;
 	background:white;
 	font-size:20px;
 	padding-left:10px;
 	position:relative;
+	/* float:left; */
 }
 .section9 input[type='submit']{
 	display:inline-block;
@@ -484,18 +522,30 @@ header ul li:nth-child(5):hover~.move{
 	background:#75757f;
 	color:white;
 	position:relative;
-	top:-3.3px;
-
-}
-.section9 div{
-	font-size:0;
+	font-size:16px;
 	vertical-align:top;
 }
-.section9 ul{
-	list-style:none;
+.icon{
+	color: #fff;
+    display: inline-block;
+    font-size: 30px;
+    height: 50px;
+    position: relative;
+    top: 30px;
+    width: 100%;
 }
-.section9 ul li{
-	display:inline-block;
+.icon i {
+    cursor: pointer;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    transition: font-size 0.4s ease-in-out 0s;
+    vertical-align: middle;
+    width: 50px;
+}
+.icon i:hover{
+	font-size:35px;
 }
 footer{
 	width:100%;
