@@ -92,20 +92,20 @@ header ul li:nth-child(5):hover~.move{
 .login span{
 	line-height:60px;
 }
-.cover{
+#section1{
 	background:url("../img/pic01.jpg");
 	background-size:100% auto;
 	padding-left:8em;
 	padding-top:8em;
 	padding-bottom:6em
 }
-.cover h1{
+#section1 h1{
 	color:white;
 	font-family:'Arial';
 	font-weight:lighter;
 	font-size:60px;
 }
-.cover h2{
+#section1 h2{
 	font-family:'Arial';
 	font-size:22px;
 	color:white;
@@ -114,7 +114,7 @@ header ul li:nth-child(5):hover~.move{
 	margin-bottom:2em;
 	width:15em;
 }
-.cover input{
+#section1 input{
 	background:#be4f48;
 	color:white;
 	text-align:center;
@@ -125,7 +125,7 @@ header ul li:nth-child(5):hover~.move{
 	margin-bottom:20px;
 	height:60px;
 }
-.feature{
+#section2{
 	font-size:0;
 	width:100%;
 	height:220px;
@@ -144,7 +144,7 @@ header ul li:nth-child(5):hover~.move{
 	position: relative;
 	top:30px;
 }
-.feature .mes{
+#section2 .mes{
 	font-size:14px;
 	display:inline-block;
 	height:40px;
@@ -156,39 +156,39 @@ header ul li:nth-child(5):hover~.move{
 .cell:last-child .mes{
 	border:medium none;
 }
-.feature .mes:hover{
+#section2 .mes:hover{
 	color:#be4f48;
 }
-.known{
+#section3{
 	height:400px;
 	width:100%;
 	background:#edeaea;
 	text-align:center;
 }
-.known div{
+#section3 div{
 	position:relative;
 	top:100px;
 	font-size:50px;
 	color:#534141;
 }
-.known img{
+#section3 img{
 	position:relative;
 	top:80px;
 }
-.city{
+#section4{
 	position:relative;
 	text-align:center;
 	background:url("../img/pic02.jpg");
 	height:300px;
 	width:100%;
 }
-.city h1{
+#section4 h1{
 	position:relative;
 	top:50px;
 	color:white;
 	font-size:22px;
 }
-.city > span{
+#section4 > span{
 	display:inline-block;
 	height:10px;
 	border-bottom:2px solid #fff;
@@ -198,10 +198,10 @@ header ul li:nth-child(5):hover~.move{
 	margin:0 auto;
 	transition:width 0.4s ease-in-out;
 }
-.city > span:hover{
+#section4 > span:hover{
 	width:300px;
 }
-.city p{
+#section4 p{
 	position:relative;
 	top:70px;
 	color:white;
@@ -211,7 +211,7 @@ header ul li:nth-child(5):hover~.move{
 }
 
 
-.city input[type="radio"]{
+#section4 input[type="radio"]{
 	opacity:0;
 	z-index:10;
 	cursor:pointer;
@@ -262,7 +262,7 @@ header ul li:nth-child(5):hover~.move{
     left: -2px;
     top: 34px;
 }
-.city .options .select .option ul{
+#section4 .options .select .option ul{
     margin: 0;
     padding: 0;
     width: 240px;
@@ -270,7 +270,7 @@ header ul li:nth-child(5):hover~.move{
     border: 2px solid #AE7271;
     border-top-width: 0;
 }
-.city .options .select .option ul li{
+#section4 .options .select .option ul li{
     height: 32px;
     line-height: 32px;
     text-align: left;
@@ -278,12 +278,12 @@ header ul li:nth-child(5):hover~.move{
     list-style: none;
     cursor: pointer;
 }
-.city .options .select .option ul li:hover{
+#section4 .options .select .option ul li:hover{
     background: url(../img/icon-8.png) no-repeat 10px 8px,#BF4E48;
     background-size: 20px;
     color: #fff;
 }
-.city input[type="radio"]:nth-of-type(1):checked ~ .options .select-1 {
+#section4 input[type="radio"]:nth-of-type(1):checked ~ .options .select-1 {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
@@ -293,32 +293,32 @@ header ul li:nth-child(5):hover~.move{
     border-style: solid;
     border-width: 2px 2px 0;
 }
-.city input[type="radio"]:nth-of-type(1):checked~.options .select,
-.city input[type="radio"]:nth-of-type(2):checked~.options .select{
+#section4 input[type="radio"]:nth-of-type(1):checked~.options .select,
+#section4 input[type="radio"]:nth-of-type(2):checked~.options .select{
 	top: -1px;
 }
-.city input[type="radio"]:nth-of-type(1):checked~.options .select-1{
+#section4 input[type="radio"]:nth-of-type(1):checked~.options .select-1{
     border: 2px solid #AE7271;
     border-bottom-width: 0;
 }
-.city input[type="radio"]:nth-of-type(1):checked~.options .select-1 .option{
+#section4 input[type="radio"]:nth-of-type(1):checked~.options .select-1 .option{
     display: block;
 }
-.city input[type="radio"]:nth-of-type(2):checked~.options .select-2{
+#section4 input[type="radio"]:nth-of-type(2):checked~.options .select-2{
     border: 2px solid #AE7271;
     border-bottom-width: 0;
 }
-.city input[type="radio"]:nth-of-type(2):checked~.options .select-2 .option{
+#section4 input[type="radio"]:nth-of-type(2):checked~.options .select-2 .option{
     display: block;
 }
-.city input[type="radio"]:nth-of-type(3):checked~.options .select-3{
+#section4 input[type="radio"]:nth-of-type(3):checked~.options .select-3{
     border: 2px solid #AE7271;
     border-bottom-width: 0;
 }
-.city input[type="radio"]:nth-of-type(3):checked~.options .select-3 .option{
+#section4 input[type="radio"]:nth-of-type(3):checked~.options .select-3 .option{
 	display:block;
 }
-.city input[type="submit"]{
+#section4 input[type="submit"]{
 	font-size:16px;
 	color:white;
 	background:#be4f48;
@@ -330,39 +330,39 @@ header ul li:nth-child(5):hover~.move{
 	top:36px;
 	z-index:10;
 }
-.city input[type="submit"]:hover{
+#section4 input[type="submit"]:hover{
 	opacity:1;
 }
-.gallary figure:nth-child(2) p:first-child{
+#section5 figure:nth-child(2) p:first-child{
 	font-size:24px;
 	/* 使用letter-spacing不能居中,需要加上text-indent */
 	text-indent:14px;
 	letter-spacing:14px;
 	color:0;
 }
-.gallary p:nth-child(2){
+#section5 p:nth-child(2){
 	font-size:14px;
 	color:0;
 }
-.gallary p:nth-child(3),.gallary figure:nth-child(2) p{
+#section5 p:nth-child(3),#section5 figure:nth-child(2) p{
 	font-size:12px;
 	color:#b3afac;
 	margin:4px 0;
 }
-.gallary figure{
+#section5 figure{
 	display:inline-block;
 	width:216px;
 	margin:10px 20px;
 	position:relative;
 	top:40px;
 }
-.gallary{
+#section5{
 	background:#edeaea;
 	width:100%;
 	height:500px;
 	text-align:center;
 }
-.section6{
+#section6{
 	height:560px;
 	width:100%;
 }
@@ -442,23 +442,23 @@ header ul li:nth-child(5):hover~.move{
 	text-align:center;
 	margin-top:30px;
 }
-.section7{
+#section7{
 	height:518px;
 	width:100%;
 }
-.section7 div{
+#section7 div{
 	text-align:center;
 	float:left;
 	width:33.3%;
 	height:100%;
 	position: relative;
 }
-.section7 div p{
+#section7 div p{
 	font:24px 'Microsoft yahei';
 	line-height:36px;
 	margin-top:200px;
 }
-.section7 hr{
+#section7 hr{
 	width:2em;
 	/* color:grey; */
 	margin:9px auto;
@@ -466,10 +466,10 @@ header ul li:nth-child(5):hover~.move{
 	height:2px;
 	background:grey;
 }
-.section7 div:first-child{
+#section7 div:first-child{
 	background:#e84e4c;
 }
-.section7 div:last-child::before{
+#section7 div:last-child::before{
 	content:"";
 	border-color:transparent transparent transparent #fff;
 	border-width:30px;
@@ -479,7 +479,7 @@ header ul li:nth-child(5):hover~.move{
 	left:0;
 
 }
-.section7 input{
+#section7 input{
 	border:1px solid #e84e4c;
 	width:8em;
 	font-size:20px;
@@ -487,18 +487,18 @@ header ul li:nth-child(5):hover~.move{
 	background:white;
 	margin-top:10px;
 }
-.section7 div:first-child p{
+#section7 div:first-child p{
 	color:white
 }
-.section7 div:first-child input{
+#section7 div:first-child input{
 	border:1px solid white;
 	color:white;
 	background:#e8484c;
 }
-.section7 div:first-child hr{
+#section7 div:first-child hr{
 	background:white;
 }
-.section8{
+#section8{
 	width:100%;	
 	background:white;
 }
@@ -588,32 +588,32 @@ header ul li:nth-child(5):hover~.move{
 	background:#fff;
 	border:1px solid #eee;
 }
-.section9{
+#section9{
 	height:400px;
 	background:#33363f;
 	text-align:center;
 	width:100%;
 }
-.section9 h1{
+#section9 h1{
 	display:inline-block;
 	color:white;
 	margin-top:100px;
 	margin-bottom:20px;
 	font-size:20px;
 }
-.section9 p{
+#section9 p{
 	color:white;
 	font-size:16px;
 	margin-bottom:30px;
 }
-.section9 div{
+#section9 div{
 	font-size:0;
 	vertical-align:top;
 	height:40px;
 	margin:0 auto;
 	width:510px;
 }
-.section9 input[type="email"]{
+#section9 input[type="email"]{
 	display:inline-block;
 	height:40px;
 	width:410px;
@@ -624,7 +624,7 @@ header ul li:nth-child(5):hover~.move{
 	position:relative;
 	/* float:left; */
 }
-.section9 input[type='submit']{
+#section9 input[type='submit']{
 	display:inline-block;
 	width:90px;
 	height:40px;
