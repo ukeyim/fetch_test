@@ -45,8 +45,16 @@ header>ul>li{
 header ul li:hover{
 	color:#f04c57;
 }
-.login:hover{
-	border-bottom:4px solid #f04c57;
+.login span:hover~.move{
+	width:100%;
+}
+.login .move{
+	width:0;
+	position:absolute;
+	border-bottom:4px solid #e53c3c;
+	left:0;
+	bottom:0;
+	transition: width 0.4s ease-in-out;
 }
 .move{
 	position: absolute;
@@ -78,6 +86,7 @@ header ul li:nth-child(5):hover~.move{
 	text-align:center;
 	width:70px;
 	float:right;
+	position: relative;
 }
 .login span{
 	line-height:60px;
@@ -176,6 +185,19 @@ header ul li:nth-child(5):hover~.move{
 	color:white;
 	font-size:22px;
 }
+.city > span{
+	display:inline-block;
+	height:10px;
+	border-bottom:2px solid #fff;
+	width:20px;
+	position:relative;
+	top:55px;
+	margin:0 auto;
+	transition:width 0.4s ease-in-out;
+}
+.city > span:hover{
+	width:300px;
+}
 .city p{
 	position:relative;
 	top:70px;
@@ -183,13 +205,6 @@ header ul li:nth-child(5):hover~.move{
 	font-size:13px;
 	margin-top:20px;
 	margin-bottom:35px;
-}
-.city hr{
-	position:relative;
-	top:55px;
-	margin:0 auto;
-	width:30px;
-	color:white;
 }
 .city select,.city input{
 	position:relative;
@@ -203,7 +218,12 @@ header ul li:nth-child(5):hover~.move{
 	font-size:16px;
 	color:white;
 	background:#be4f48;
+	opacity:0.9;
 	border:0;
+}
+.city input:hover{
+	opacity:1;
+
 }
 .gallary h5{
 	font-size:20px;
@@ -226,6 +246,7 @@ header ul li:nth-child(5):hover~.move{
 }
 .section6{
 	height:560px;
+	width:100%;
 }
 .s6_left{
 	background:url("pic07.jpg") no-repeat scroll;
@@ -260,7 +281,7 @@ header ul li:nth-child(5):hover~.move{
 	border-width:30px;
 	content:"";
 	left:100%;
-	margin-left:-60px;
+	margin-left:-79px;
 	position:absolute;
 	top:250px;
 }
@@ -288,8 +309,9 @@ header ul li:nth-child(5):hover~.move{
 .s6_right p:nth-child(2){
 	font-size:14px;
 	line-height:25px;
-	margin-top:20px;
 	top:250px;
+	width:200px;
+	margin:20px auto 0;
 }
 .s6_right input{
 	border:1px solid #be4f48;
