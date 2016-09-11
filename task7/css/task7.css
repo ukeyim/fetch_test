@@ -80,7 +80,7 @@ header ul li:nth-child(5):hover~.move{
 	left:80%;
 }
 .login{
-	background:url("icon-2.jpg") no-repeat left center scroll;
+	background:url("../img/icon-2.jpg") no-repeat left center scroll;
 	margin-left:6em;
 	margin-right:4em;
 	color:#f04c57;
@@ -93,7 +93,7 @@ header ul li:nth-child(5):hover~.move{
 	line-height:60px;
 }
 .cover{
-	background:url("pic01.jpg");
+	background:url("../img/pic01.jpg");
 	background-size:100% auto;
 	padding-left:8em;
 	padding-top:8em;
@@ -178,7 +178,7 @@ header ul li:nth-child(5):hover~.move{
 .city{
 	position:relative;
 	text-align:center;
-	background:url("pic02.jpg");
+	background:url("../img/pic02.jpg");
 	height:300px;
 	width:100%;
 }
@@ -209,24 +209,129 @@ header ul li:nth-child(5):hover~.move{
 	margin-top:20px;
 	margin-bottom:35px;
 }
-.city select,.city input{
-	position:relative;
-	top:85px;
-	display:inline-block;
+
+
+.city input[type="radio"]{
+	opacity:0;
+	z-index:10;
+	cursor:pointer;
+	height:36px;
 	width:240px;
-	height:30px;
+	position: relative;
+	top:47px;
 	margin:0 10px;
 }
-.city input{
+.options{
+	height:36px;
+}
+.options .select{
+	vertical-align:top;
+	width:240px;
+	height:36px;
+	position:relative;
+	box-sizing: border-box;
+	/* 为什么要加none */
+	background-attachment: scroll, scroll;
+    background-clip: border-box, border-box;
+    background-color: #fff;
+    background-image: url("../img/icon-7.png"), none;
+    background-origin: padding-box, padding-box;
+    background-position: 210px 8px, 0 0;
+    background-repeat: no-repeat, repeat;
+    background-size: 20px auto;
+    border: 1px solid #c6b3af;
+	color: #b3b3b3;
+    display: inline-block;
+	text-align:left;
+	line-height:36px;
+	margin:0 10px;
+}
+.options .select:last-child{
+	visibility:hidden;
+}
+.options .select span{
+    margin-left: 10px;
+}
+.options .select .option{
+    width: 240px;
+    background-color: #E3E3E5;
+    position: absolute;
+    z-index: 10;
+	/* 现将option隐藏 */
+    display: none;
+    left: -2px;
+    top: 34px;
+}
+.city .options .select .option ul{
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    box-sizing: border-box;
+    border: 2px solid #AE7271;
+    border-top-width: 0;
+}
+.city .options .select .option ul li{
+    height: 32px;
+    line-height: 32px;
+    text-align: left;
+    padding-left: 40px;
+    list-style: none;
+    cursor: pointer;
+}
+.city .options .select .option ul li:hover{
+    background: url(../img/icon-8.png) no-repeat 10px 8px,#BF4E48;
+    background-size: 20px;
+    color: #fff;
+}
+.city input[type="radio"]:nth-of-type(1):checked ~ .options .select-1 {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ae7271;
+    border-image: none;
+    border-style: solid;
+    border-width: 2px 2px 0;
+}
+.city input[type="radio"]:nth-of-type(1):checked~.options .select,
+.city input[type="radio"]:nth-of-type(2):checked~.options .select{
+	top: -1px;
+}
+.city input[type="radio"]:nth-of-type(1):checked~.options .select-1{
+    border: 2px solid #AE7271;
+    border-bottom-width: 0;
+}
+.city input[type="radio"]:nth-of-type(1):checked~.options .select-1 .option{
+    display: block;
+}
+.city input[type="radio"]:nth-of-type(2):checked~.options .select-2{
+    border: 2px solid #AE7271;
+    border-bottom-width: 0;
+}
+.city input[type="radio"]:nth-of-type(2):checked~.options .select-2 .option{
+    display: block;
+}
+.city input[type="radio"]:nth-of-type(3):checked~.options .select-3{
+    border: 2px solid #AE7271;
+    border-bottom-width: 0;
+}
+.city input[type="radio"]:nth-of-type(3):checked~.options .select-3 .option{
+	display:block;
+}
+.city input[type="submit"]{
 	font-size:16px;
 	color:white;
 	background:#be4f48;
 	opacity:0.9;
 	border:0;
+	height:36px;
+	width:240px;
+	position: relative;
+	top:36px;
+	z-index:10;
 }
-.city input:hover{
+.city input[type="submit"]:hover{
 	opacity:1;
-
 }
 .gallary figure:nth-child(2) p:first-child{
 	font-size:24px;
@@ -262,7 +367,7 @@ header ul li:nth-child(5):hover~.move{
 	width:100%;
 }
 .s6_left{
-	background:url("pic07.jpg") no-repeat scroll;
+	background:url("../img/pic07.jpg") no-repeat scroll;
 	height:560px;
 	text-align:center;
 	vertical-align:middle;
@@ -471,12 +576,17 @@ header ul li:nth-child(5):hover~.move{
 	margin-bottom:20px;
 	background:#eee;
 	border:0;
+	resize:none;
 	font-size:16px;
 	padding-left:0.5em;
 	padding-top:0.5em;
 }
 .s8_right input:last-child{
 	width:640px;
+}
+.s8_right input:focus,.s8_right textarea:focus{
+	background:#fff;
+	border:1px solid #eee;
 }
 .section9{
 	height:400px;
@@ -543,6 +653,7 @@ header ul li:nth-child(5):hover~.move{
     transition: font-size 0.4s ease-in-out 0s;
     vertical-align: middle;
     width: 50px;
+	font-size:30px;
 }
 .icon i:hover{
 	font-size:35px;
@@ -558,6 +669,10 @@ footer div{
 	color:white;
 	float:left;
 	margin-left:50px;
+}
+footer div a{
+	text-decoration:none;
+	color:#fff;
 }
 footer div:last-child{
 	float:right;
