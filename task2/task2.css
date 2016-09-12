@@ -1,0 +1,150 @@
+body{
+	background:#DDDEDF;
+	font-size:14px;
+	margin:0;
+	padding:0;
+}
+.header{
+	/* 注释掉的是原来写的垃圾代码 */
+	/* position: absolute; */
+	/* top:0px; */
+	/* left:0; */
+	/* width:100%; */
+	/* height:4em; */
+	/* overflow:auto; */
+	/* background: #333333; */
+	/* padding:0em 2em; */
+	  height: 70px;
+  width: 100%;
+  background: #333333;
+  display: table;
+  vertical-align: middle;
+  min-width: 700px;
+}
+.header span{
+  display: table-cell;
+  /* 下面两句强行居中 */
+  vertical-align: middle;
+  height: 70px;
+}
+.header span img{
+	margin-left:35px;
+}
+
+nav ul{
+	float:right;
+	/* 下面两行不知道 */
+	margin:0;
+	padding:0;
+}
+nav ul li{
+  line-height: 70px;
+  float: left;
+  margin-right: 20px;
+}
+nav ul li a{
+	color:#FFF;
+	text-decoration:none;
+}
+nav ul li a:hover{
+  color:gray;
+}
+
+article,aside{
+	background:#FEFFFF;
+	padding:20px;
+	margin:40px 40px 20px;
+	/* 将border改成了box-shadow */
+	/* border:2px solid #CCCDCE; */
+	box-shadow: 2px 2px 2px #848484;
+}
+.color_grey{
+	color:grey;
+}
+.text_indent{
+	text-indent:2em;
+}
+.pic_title{
+	text-align:center;
+}
+.no_list{
+	list-style:none;
+}
+
+figure{
+	height:180px;
+	width:180px;
+	text-align:center;
+	border:1px solid #EEE;
+}
+article>img{
+	width:100px;
+	height:100px;
+	margin-left:1em;
+}
+table{
+	width:100%;
+	/* border: 0.1em solid; */
+	border-collapse: collapse;
+}
+th{
+	text-align:left;
+	background:#333;
+	color:white;
+}
+tfoot{
+	background:#ccc;
+	border:0;
+	margin:0;
+	padding:0;
+}
+.left{
+	width:50%;
+	display:inline-block;
+	text-align:right;
+	font-size:15px;
+	height:2em;
+}
+.right{
+	width:50%;
+	display:inline-block;
+	text-align:left;
+	height:2em;
+}
+.demand{
+	margin-left:50.5%;
+	color:grey;
+	font-size:12px;
+	margin-top:0;
+	margin-bottom:0;
+}
+input[type="submit"]{
+	width:100%;
+	height:3em;
+	background:#355ACD;
+	text-align:center;
+	color:white;
+	border:0;
+}
+.info{
+	font-size:12px;
+	color:grey;
+}
+textarea{
+	vertical-align:top;
+	width:340px;
+	height:120px;
+	margin-bottom:20px;
+}
+input{
+	vertical-align:middle;
+}
+footer{
+	width:100%;
+	height: 40px;
+	background:#000;
+	text-align:center;
+	color:white;
+	display:table;
+	vertical-align:middle;
+}
