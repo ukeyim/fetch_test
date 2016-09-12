@@ -154,7 +154,7 @@ header ul li:nth-child(5):hover~.move{
 	transition:color 0.4s ease-in-out;
 }
 .cell:last-child .mes{
-	border:medium none;
+	border:medium none!important;
 }
 #section2 .mes:hover{
 	color:#be4f48;
@@ -338,6 +338,7 @@ header ul li:nth-child(5):hover~.move{
 	/* 使用letter-spacing不能居中,需要加上text-indent */
 	text-indent:14px;
 	letter-spacing:14px;
+	color:0;
 	color:0;
 }
 #section5 p:nth-child(2){
